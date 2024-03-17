@@ -1,0 +1,2709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF1F6;
+    /*background: #009FFF;  !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #ec2F4B, #009FFF); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    /*background: #ee9ca7;  !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #ffdde1, #ee9ca7); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    
+
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    all: unset;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*        header   one      */
+
+.sticky {
+    height: 0;
+    animation: ani .5s forwards;
+}
+@keyframes ani {
+    0% {height: 100px;}
+    100% {height: 80px;}
+}
+
+header {
+    background-color: #fff;
+}
+
+.showHead {
+    display: none;
+}
+
+.headerOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerOneContainer {
+    width: 1200px;
+}
+
+.iconAndName {
+    display: flex;
+}
+
+.positionClinic {
+    display: flex;
+}
+
+.numberClinic {
+    display: flex;
+}
+
+.blockNumber {
+    display: flex;
+    flex-direction: column;
+}
+
+.hOne {
+    height: 100px;
+    border-bottom: 1px solid #CBD7F5;
+    display: flex;
+    transition: 1s all ease;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.hTwo {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    z-index: 10;
+}
+
+.nameClinic h2 {
+    font-size: 20px;
+    letter-spacing: 0.125rem;
+}
+
+.nameClinic span {
+    letter-spacing: 0;
+    color: #FF287A;
+    font-size: 26px;
+}
+
+
+.zapis {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: #FF287A;
+    border: 1px solid #FF287A;
+    padding: 10px 70px;
+    background-color: transparent;
+    transition: .5s all ease;
+}
+
+.zapis:hover {
+    background-color: #FF287A;
+    color: #FFF;
+}
+
+.textPosition p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #000;
+    padding-left: 10px;
+}
+
+.textPosition span {
+    color: #000;
+}
+
+.textNumber a {
+    color: #000;
+    font-size: 16px;
+}
+
+.blockNumber {
+    padding-left: 10px;
+}
+
+.spanTime {
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+}
+
+
+.callHeader {
+    color: #000;
+    letter-spacing: 0.125rem;
+}
+
+.iconPosition img, .iconNumber img {
+    width: 20px;
+}
+
+.btnCall a {
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: .5s all ease;
+}
+
+.btnCall a:hover {
+    color: #6e6e6e;
+}
+
+
+/*   Header menu     */
+
+main {
+    top: 100px;
+    position: relative;
+}
+
+.hTwo {
+    border-bottom: 1px solid #CBD7F5;
+}
+
+.listMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.listMenu > li {
+    list-style: none;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    background-image: linear-gradient(#FF287A, #ff5e9c);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+}
+
+.listMenu > li > a {
+    color: #000;
+}
+
+.listMenu > li:hover {
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    color: #fff;
+}
+.listMenu > li:hover > a {
+    color: #fff;
+}
+
+
+/*   main section      */
+
+
+.bgMainSection {
+    background: url(../img/fonMain/fonMain.svg);
+    height: 415px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+
+.imageMain img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mainSectionAll {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mainSection {
+    padding: 100px 0;
+    position: relative;
+}
+
+.titleBlockMAin {
+    font-size: 2.1rem;
+    text-align: end;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.bolderTitleBlock {
+    font-weight: 600;
+}
+
+.titleBlockMAin span {
+    color: #FF287A;
+}
+
+/*  форма на главной странице   */
+
+.formMain {
+    background-color: #fff;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 30px;
+    margin: 40px 0 0 40px;
+    border: 1px solid #FF287A;
+    position: relative;
+}
+
+.formMain form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.allInputForm {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.inpMainForm:not(:last-child) {
+    margin-right: 35px;
+}
+
+.nameFormMain {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.nameFormMain h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.subNameFormMain {
+    font-size: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.rightBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btnFormMain {
+    background-color: #FF287A;
+    color: #fff;
+    padding: 14px 33px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s all ease;
+    border: 1px solid #FF287A;
+    text-transform: uppercase;
+}
+
+.btnFormMain:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #FF287A;
+}
+
+.inpMainForm input {
+    color: #000;
+    border-radius: 15px;
+    padding: 14px 33px;
+    border: 1px solid #FF287A;
+}
+
+
+/*  программы эко  */
+
+.programmsCheck {
+    background: #fff;
+    position: relative;
+}
+
+.fonProgEco {
+    background: url(../img/fonProgEco/fonProgEco.svg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.relativeFon {
+    position: relative;
+}
+
+
+
+
+
+.titleProgrammsCheck h2 {
+    font-size: 36px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.blockInfoProgramms {
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+.ProgrammOne,
+.ProgrammTwo,
+.ProgrammThree,
+.ProgrammThour,
+.ProgrammFive,
+.ProgrammSix {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.ProgrammTwo,
+.ProgrammThree,
+.ProgrammThour,
+.ProgrammFive,
+.ProgrammSix {
+    display: none;
+}
+
+.textBlockProgramm {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+.titleBlockProgramm {
+    font-size: 30px;
+    font-style: italic;
+    color: #FF287A;
+}
+
+.subtitleBlockProgramm {
+    font-size: 16px;
+}
+
+.bottomSubtitleProgramm {
+    margin-bottom: 30px;
+}
+
+.blockBtnProgrammsDefault {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*  кнопка в обычном состоянии  */
+
+
+
+/*  кнопка при нажатии  */
+
+.activeBtnProgramms1.active,
+.activeBtnProgramms2.active,
+.activeBtnProgramms3.active,
+.activeBtnProgramms4.active,
+.activeBtnProgramms5.active,
+.activeBtnProgramms6.active {
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #FF287A;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.blockBtnProgrammsDefault {
+    border: none;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.blockBtnProgrammsDefault > button {
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/*    блок с табами     */
+
+.titleBlockLine {
+    position: relative;
+}
+
+.titleBlockLine h2 {
+    margin-bottom: 100px;
+    color: #FF287A;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/*.titleBlockLineWhite h2 {*/
+/*    margin-bottom: 100px;*/
+/*    color: #fff;*/
+/*    font-size: 36px;*/
+/*    font-weight: lighter;*/
+/*    text-align: center;*/
+/*}*/
+
+
+
+.titleBlockLine::after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background-color: #FF287A;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.titleBlockLineWhite::after {
+    content: '';
+    width: 20%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.activeBtn {
+    border-bottom: 5px solid #FF287A;
+    color: #FF287A;
+}
+
+.blockBtn {
+    width: 100%;
+    display: flex;
+}
+
+.blockBtn > button {
+    width: 100%;
+    cursor: pointer;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+#B2, #B3 {
+    border-bottom: 5px solid #fff;
+}
+
+.blockInfo1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s all ease;
+    z-index: 1;
+}
+
+.blockInfo2 {
+    display: none;
+    transition: .5s all ease;
+}
+
+.blockInfo3 {
+    display: none;
+    transition: .5s all ease;
+}
+
+.card {
+    position: relative;
+    margin-top: 35px;
+    width: 380px;
+    height: 500px;
+    border: 1px solid #FF287A;
+    border-radius: 35px;
+    background-color: #fff;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleCard {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.subtitleCard {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.dataCard {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.nowPrice {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.salePrice {
+    font-size: 22px;
+    color: red;
+}
+
+.card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.priceCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.nowPrice {
+    margin-right: 15px;
+}
+
+.btnCard {
+    font-size: 16px;
+    border: 1px solid #FF287A;
+    color: #FF287A;
+    padding: 11px 65px;
+    border-radius: 12px;
+    position: absolute;
+    margin-left: 75px;
+    margin-right: 75px;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+/*        блок почему мы    */
+
+
+.fonWhyWeTwo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 700px;
+    background: url("../img/fonWhyMe/fonWhyMe.svg") no-repeat;
+    background-size: contain;
+}
+
+
+
+.fonGlobus {
+    position: absolute;
+    background: url(../img/iconsWhyWe/globus/globus.svg) no-repeat;
+    width: 100%;
+    top: -40px;
+    height: 230px;
+    left: 80px;
+}
+
+.whyWe {
+    margin-top: 100px;
+    background: #fff;
+}
+
+.blockCardWhyWe {
+    position: relative;
+    z-index: 1;
+}
+
+.cardWhy {
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 40px;
+    border: 1px solid #FF287A;
+    position: relative;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+.cardWhy:hover {
+    background-color: #E8F5FF;
+    border: 1px solid #E8F5FF;
+    margin-top: -10px;
+}
+
+.titleCardWhy {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.subtitleCardWhy {
+    font-size: 16px;
+    color: #666666;
+    font-style: italic;
+    text-align: center;
+}
+
+.blockIconCardWhy {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 12px 12px 5px rgba(34, 60, 80, 0.38);
+    -moz-box-shadow: 2px 12px 12px 5px rgba(34, 60, 80, 0.38);
+    box-shadow: 2px 12px 12px 5px rgba(34, 60, 80, 0.38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.rowCardWhy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardWhy:not(:last-child) {
+    margin-right: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.subtitleCardWhy p {
+    padding: 0 30px;
+}
+
+@media (min-width: 1440px) {
+    .fonGlobus {
+        left: 400px;
+    }
+}
+
+.fonWhyWe {
+    background: url(../img/fonProgEco/fonProgEco.svg) no-repeat;
+    transform: rotate(180deg);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 401px;
+}
+
+
+/*    блок о клинике     */
+
+/*.fonAboutClinic {*/
+/*    background: url(../img/fonProgEco/fonProgEco.svg);*/
+/*    position: absolute;*/
+/*    top: -195px;*/
+/*    width: 100%;*/
+/*    height: 200px;*/
+/*}*/
+
+.aboutClinic {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.blockInfoClinic img {
+    width: 500px;
+    border-radius: 30px 0 0 30px;
+}
+
+.blockInfoClinic {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.textInfoClinic {
+    padding: 30px 30px;
+    border-top: 1px solid #FF287A;
+    border-bottom: 1px solid #FF287A;
+    border-right: 1px solid #FF287A;
+    border-radius: 0 30px 30px 0;
+}
+
+.titleTextInfoClinic {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.subtitleTextInfoClinic {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+
+/*  программы ЭКО   */
+
+
+.programmsECO {
+    padding-bottom: 100px;
+}
+
+.oneRowCardsProgramms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardECO {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    border: 1px solid #FF287A;
+    border-radius: 40px;
+    width: 100%;
+    padding: 30px 30px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.cardECO:not(:last-child) {
+    margin-right: 30px;
+}
+
+.blockUpTextCardEco {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockBottomCardEco {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnCardEco {
+    border: 1px solid #FF287A;
+    background-color: #fff;
+    color: #FF287A;
+    padding: 11px 0;
+    border-radius: 12px;
+    text-align: center;
+    width: 180px;
+    cursor: pointer;
+    transition: .5s all ease;
+    font-size: 14px;
+}
+
+.btnCardEco:hover {
+    background-color: #FF287A;
+    color: #fff;
+}
+
+.titleCardEco {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.subtitleCardEco {
+    margin-bottom: 70px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.priceCardEco {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF287A;
+    cursor: pointer;
+}
+
+.priceCardEcoTwoRows {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF287A;
+    cursor: pointer;
+}
+
+.twoRowCardsEco {
+    margin-top: 30px;
+    display: flex;
+}
+
+.blockBottomCardEcoTwoRows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ThreeRowCardsProgramms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.titleCardEcoTwoRows {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.subtitleCardEcoTwoRows {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666666;
+    text-align: justify;
+}
+
+.subtitleCardEcoThreeRow {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666666;
+    text-align: justify;
+}
+
+.sizeCardEcoTwoRows {
+    height: 260px;
+}
+
+.sizeCardEcoThreeRows {
+    height: 360px;
+}
+
+.subtitleCardEcoOneRows {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: justify;
+    color: #666666;
+}
+
+.priceCardEcoOneRows {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF287A;
+    cursor: pointer;
+}
+
+.sizeCardEcoOneRows {
+    height: 364px;
+}
+
+
+
+/*    что входит в ЭКО    */
+
+.whatEco {
+    margin-bottom: 100px;
+}
+
+
+.rowOneCardsWhatEco {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rowTwoCardsWhatEco {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardWhatEco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textWhatEco {
+    font-size: 16px;
+    text-align: center;
+}
+
+.sizeCardWhatEcoOneRow {
+    width: 190px;
+    padding: 0 20px;
+}
+
+.sizeCardWhatEcoTwoRow {
+    width: 290px;
+    padding: 0 20px;
+}
+
+.iconWhatEco {
+    margin-bottom: 10px;
+}
+
+.iconWhatEco img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*   Помощь в подборе   */
+
+
+.needHelp {
+    margin-bottom: 100px;
+}
+
+.blockNeedHelp {
+    background-color: #fff;
+    border-radius: 30px;
+    align-items: center;
+    height: 320px;
+    display: flex;
+    position: relative;
+}
+
+.titleNeedHelp {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 56px;
+    padding: 0 20px;
+}
+
+.leftBlockHelp {
+    margin-left: 60px;
+}
+
+.rightBlockHelp {
+    position: absolute;
+    bottom: 0;
+    right: 108px;
+}
+
+
+/*  блок с вопросамм  */
+
+.titleBlockQuestions {
+    margin-bottom: 50px;
+    color: #000;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.box {
+    position: relative;
+    margin-bottom: 20px; /* Нижний отступ между элементами аккордеона */
+}
+
+.box:last-child {
+    margin-bottom: 0; /* Для последнего элемента нижний отступ убираем */
+}
+
+.box .label {
+    position: relative;
+    padding: 20px 30px 20px 0;
+    background-color: transparent;
+    color: #FF287A;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.box .label::after {
+    content: "+"; /* Задаем иконку "+" для элемента аккордеона */
+    position: absolute;
+    top: 50%; /* Выравнивание по центру */
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box.active .label::after {
+    content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
+}
+
+.box .content {
+    position: relative;
+    background-color: #FFF1F6; /* Цвет фона контента */
+    overflow: hidden;
+    max-height: 0; /* Скрываем контент */
+    transition: 0.3s; /* Для плавности анимации */
+    border-bottom: 1px solid #FF287A;
+}
+
+.box .content p {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.box .content ol {
+    padding: 0 50px 20px 50px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+/*     мобильное меню    */
+
+.nav {
+    /*  ширна произвольная, не стесняйтесь экспериментировать */
+    width: 320px;
+    min-width: 320px;
+    /* фиксируем и выставляем высоту панели на максимум */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    /* сдвигаем (прячем) панель относительно правого края страницы */
+    right: -320px;
+    /* внутренние отступы */
+    padding: 15px 20px;
+    /* плавный переход смещения панели */
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: right 0.3s;
+    /* определяем цвет фона панели */
+    background: #fff;
+    /* поверх других элементов */
+    z-index: 2000;
+}
+
+
+/**
+ * Кнопка переключения панели
+ * тег <label>
+ */
+
+.nav-toggle {
+    display: none;
+    /* абсолютно позиционируем */
+    position: absolute;
+    /* относительно правого края панели */
+    right: 320px;
+    /* отступ от верхнего края панели */
+    top: 1.6em;
+    /* внутренние отступы */
+    padding: 0.5em;
+    /* определяем цвет фона переключателя
+     * чаще вчего в соответствии с цветом фона панели
+    */
+    background: #FF287A;
+    /* цвет текста */
+    color: #fff;
+    /* вид курсора */
+    cursor: pointer;
+    /* размер шрифта */
+    font-size: 1.2em;
+    line-height: 1;
+    /* всегда поверх других элементов страницы */
+    z-index: 2001;
+    /* анимируем цвет текста при наведении */
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: 1s all ease;
+}
+
+.navToggleTop {
+    top: 1.1em;
+    transition: 1s all ease;
+}
+
+
+/* определяем текст кнопки
+ * символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+
+.nav-toggle:after {
+    content: '\2630';
+    text-decoration: none;
+}
+
+
+/* цвет текста при наведении */
+
+.nav-toggle:hover {
+    color: #f4f4f4;
+}
+
+
+/**
+ * Скрытый чекбокс (флажок)
+ * невидим и недоступен :)
+ * имя селектора атрибут флажка
+ */
+
+[id='nav-toggle'] {
+    position: absolute;
+    display: none;
+}
+
+
+/**
+ * изменение положения переключателя
+ * при просмотре на мобильных устройствах
+ * когда навигация раскрыта, распологаем внутри панели
+*/
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+    left: auto;
+    right: 2px;
+    top: 1em;
+}
+
+
+/**
+ * Когда флажок установлен, открывается панель
+ * используем псевдокласс:checked
+ */
+
+[id='nav-toggle']:checked ~ .nav {
+    right: 0;
+    box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+    -webkit-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);
+    overflow-y: auto;
+}
+
+
+/*
+ * смещение контента страницы
+ * на размер ширины панели,
+ * фишка необязательная, на любителя
+*/
+
+[id='nav-toggle']:checked ~ main > article {
+    -webkit-transform: translateX(-320px);
+    -moz-transform: translateX(-320px);
+    transform: translateX(-320px);
+}
+
+
+/*
+ * изменение символа переключателя,
+ * привычный крестик (MULTIPLICATION X),
+ * вы можете испльзовать любой другой значок
+*/
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+    content: '\2715';
+}
+
+
+/**
+ * профиксим баг в Android <= 4.1.2
+ * см: http://timpietrusky.com/advanced-checkbox-hack
+ */
+
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+    to {
+        padding: 0;
+    }
+}
+
+
+/**
+ * позаботьтимся о средних и маленьких экранах
+ * мобильных устройств
+ */
+
+@media screen and (min-width: 320px) {
+    html,
+    body {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html,
+    body {
+        margin: 0;
+    }
+    .nav {
+        width: 100%;
+        box-shadow: none
+    }
+}
+
+
+/**
+ * Формируем стиль заголовка (логотип) панели
+*/
+
+.nav h2 {
+    color: #000;
+    width: 90%;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -webkit-transform: scale(0.1, 0.1);
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    transition: opacity 0.8s, transform 0.8s;
+    -ms-transition: opacity 0.8s, -ms-transform 0.8s;
+    -moz-transition: opacity 0.8s, -moz-transform 0.8s;
+    -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+}
+
+.nav h2 a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/*плавное появление заголовка (логотипа) при раскрытии панели */
+
+[id='nav-toggle']:checked ~ .nav h2 {
+    opacity: 1;
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+}
+
+
+/**
+ * формируем непосредственно само меню
+ * используем неупорядоченный список для пунктов меню
+ * прикрутим трансфомации и плавные переходы
+ */
+
+.nav > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav > ul > li {
+    line-height: 2.5;
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+    -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='nav-toggle']:checked ~ .nav > ul > li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+/* определяем интервалы появления пунктов меню */
+
+.nav > ul > li:nth-child(2) {
+    -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
+    transition: opacity .5s .2s, transform .5s .2s;
+}
+
+.nav > ul > li:nth-child(3) {
+    -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+    transition: opacity .5s .3s, transform .5s .3s;
+}
+
+.nav > ul > li:nth-child(4) {
+    -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
+    transition: opacity .5s .4s, transform .5s .4s;
+}
+
+.nav > ul > li:nth-child(5) {
+    -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
+    transition: opacity .5s .5s, transform .5s .5s;
+}
+
+.nav > ul > li:nth-child(6) {
+    -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
+    transition: opacity .5s .6s, transform .5s .6s;
+}
+
+.nav > ul > li:nth-child(7) {
+    -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
+    transition: opacity .5s .7s, transform .5s .7s;
+}
+
+
+/**
+ * оформление ссылок пунктов меню
+ */
+
+.nav > ul > li > a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #000;
+    width: 100%;
+    text-decoration: none;
+    /* плавный переход */
+    -webkit-transition: color .5s ease, padding .5s ease;
+    -moz-transition: color .5s ease, padding .5s ease;
+    transition: color .5s ease, padding .5s ease;
+}
+
+
+/**
+ * состояние ссылок меню при наведении
+ */
+
+.nav > ul > li > a:hover,
+.nav > ul > li > a:focus {
+    color: #000;
+    padding-left: 15px;
+}
+
+
+/**
+ * линия подчеркивания ссылок меню
+ */
+
+.nav > ul > li > a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+
+.nav > ul > li > a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #3bc1a0;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+
+/**
+ * анимируем линию подчеркивания
+ * ссылок при наведении
+ */
+
+.nav > ul > li > a:hover:before {
+    width: 0%;
+    background: #3bc1a0;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+.nav > ul > li > a:hover:after {
+    width: 0%;
+    background: transparent;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+
+
+
+
+/* фон затемнения на основной контент
+ * при этом элементы блокируютя
+ * спорная такая фича, если оно вам надо
+ * просто раскомментируйте
+*/
+
+
+.mask-content {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+}
+
+[id='nav-toggle']:checked ~ .mask-content {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .5s, visibility .5s;
+    transition: opacity .5s, visibility .5s;
+}
+
+
+
+
+
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    transition: 1s all ease;
+    z-index: 10;
+}
+
+.nameSticky span {
+    letter-spacing: 0;
+    font-size: 18px;
+}
+
+.nameClinic .nameSticky {
+    font-size: 13px;
+    letter-spacing: 0.125rem;
+}
+
+:target {
+    scroll-margin-top: 200px;
+}
+
+.anchor:future,
+.anchor:root,
+.safari_only {
+    padding-top: 130px;
+}
+
+@media (max-width: 1024px) {
+    :target {
+        scroll-margin-top: 100px;
+    }
+}
+
+
+/*      slider     */
+
+.sliderEcoBottom {
+    margin-top: 100px;
+}
+
+.titleSLider {
+    margin-bottom: 100px;
+    color: #FF287A;
+    font-size: 26px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+/*   contacts    */
+
+
+.contacts {
+    padding-bottom: 100px;
+}
+
+.titleBlockQuestions {
+    margin-top: 100px;
+}
+
+
+.allContactCol {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.listContact {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.listContact li {
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+    border-bottom: 1px solid #6e6e6e;
+}
+
+.listContact li p {
+    margin-bottom: 10px;
+}
+
+.listContact li a {
+    color: #FF287A;
+    font-size: 14px;
+    transition: .5s all ease;
+}
+
+.listContact li a:hover {
+    opacity: 0.4;
+}
+
+.textContact {
+    border: 1px solid #FF287A;
+}
+
+.w25 {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.w75 {
+    width: 75%;
+}
+
+
+/*  кнопка наверх   */
+
+
+.go-top {
+    position: fixed;
+    /* left: 22px; */
+    /* top: 50%; */
+    border-radius: 10px;
+    bottom: 20px;
+    right: 40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    background-color: #FF287A;
+    /* padding: 10px 10px; */
+    font-size: 14px;
+    width: 30px;
+    transition: .5s all ease;
+    z-index: 100;
+    border: 1px solid #FF287A;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* меняем прозрачность при наведении мышкой */
+.go-top:hover {
+    opacity: 0.7;
+}
+
+/* модификатор для отображения кнопки */
+.go-top--show {
+    display: flex;
+}
+
+
+/*    отзывы    */
+
+.titleBlockQuestions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnFlexReviews {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+}
+
+.itc-reviews2 {
+    margin-left: 20px;
+}
+
+.itc-slider-itemReviews {
+    flex: 0 0 50%!important;
+}
+
+.r70 {
+    right: 70px;
+    left: auto;
+}
+
+.allBlockReviews {
+    background: #fff;
+    padding: 20px;
+    border-radius: 40px;
+    margin: 0 10px 0 10px;
+    border: 1px solid #FF287A;
+}
+
+.titleRewiews {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dateReviews {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.showReviews {
+    height: auto;
+}
+
+.btnHide {
+    display: none;
+    margin-top: 20px;
+}
+
+.btnAll {
+    margin-top: 20px;
+}
+
+.hiddenReviews {
+    height: 110px;
+    overflow: hidden;
+}
+
+.textareaReviews {
+    font-size: 14px;
+}
+
+.w100Rev {
+    width: 100%;
+}
+
+
+@media (max-width: 1108px) {
+    .titleBlockLine::after {
+        display: none;
+    }
+    .titleCardEco {
+        margin-bottom: 10px;
+    }
+    .sizeCardEcoOneRows {
+        width: 49%;
+    }
+    .sizeCardEcoThreeRows {
+        width: 49%;
+    }
+    .oneRowCardsProgramms {
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    .size1024px {
+        width: 100%;
+    }
+    .twoRowCardsEco {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ThreeRowCardsProgramms {
+        flex-wrap: wrap;
+    }
+    .twoRowCardsEco {
+        margin-top: 20px;
+    }
+    .cardECO:not(:last-child) {
+        margin-right: 0;
+    }
+    /*.pb1108px:nth-child(-n+1) {  !*  только первый элемент   *!*/
+    /*    margin-right: 20px;*/
+    /*}*/
+    .pb1108px:nth-child(-n+2) {  /*  только первый и второй элемент   */
+        margin-bottom: 20px;
+    }
+    .sizeCardEcoTwoRows {
+        width: 49%;
+    }
+    .mr1108px:not(:last-child) {
+        margin-right: 0;
+    }
+    .pt1108lastCard {
+        margin-top: 30px;
+    }
+    .nameFormMain {
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .subNameFormMain {
+        font-size: 12px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .inpMainForm input {
+        color: #000;
+        border-radius: 15px;
+        padding: 10px 10px;
+        border: 1px solid #FF287A;
+    }
+    .titleBlockMAin {
+        font-size: 2rem;
+    }
+    .btnCard {
+        padding: 11px 0;
+        width: auto;
+    }
+    .listMenu > li {
+        font-size: 11px;
+        padding: 4px 4px;
+    }
+    .nameClinic h2 {
+        font-size: 14px;
+        letter-spacing: 0.125rem;
+    }
+    .nameClinic span {
+        letter-spacing: 0;
+        color: #FF287A;
+        font-size: 19px;
+    }
+    .textPosition p {
+        font-size: 14px;
+    }
+    .textNumber a {
+        font-size: 14px;
+    }
+    .btnCall a {
+        font-size: 14px;
+    }
+    .zapis {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+}
+
+
+.blockModal {
+    display: block;
+}
+
+.modal {
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 220; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+@media (max-width: 1300px) {
+    .modal {
+        cursor: pointer;
+    }
+    .mask-content {
+        cursor: pointer;
+    }
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btnFormModal {
+    width: 50%;
+}
+
+.footerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.textFooterForm {
+    color: #909090;
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: end;
+}
+
+.textFooterForm a {
+    color: #5988b6;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    color: white;
+}
+
+.formModal {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.mbModal {
+    margin-bottom: 20px;
+}
+.marginModal input {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #FF287A;
+    font-size: 14px;
+}
+
+.marginModal {
+    margin-right: 0!important;
+    width: 100%;
+}
+
+.modal-header h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.brFooterForm {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .aboutClinic {
+        padding: 0;
+    }
+    .btnFormModal {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    .modal-content {
+        width: 60%;
+    }
+    .sliderEcoBottom {
+        margin-top: 50px;
+    }
+    .titleBlockQuestions {
+        margin-top: 50px;
+    }
+    .itc-slider-indicator {
+        width: 7px;
+        height: 7px;
+    }
+    .w25 {
+        width: 40%;
+    }
+    .listContact li a {
+        font-size: 14px;
+    }
+    .listContact li p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .itc-slider-btn {
+        width: 40px;
+        height: 40px;
+    }
+    .box .content ol {
+        padding: 0 0 20px 20px;
+    }
+    .headerOne .zapis {
+        margin-right: 50px;
+    }
+    .whatEco {
+        margin-bottom: 50px;
+    }
+    .titleBlockQuestions {
+        margin-bottom: 50px;
+        color: #000;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .box .label {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .box .content p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .box .content ol {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .programmsECO {
+        padding-bottom: 50px;
+    }
+    .rightBlockHelp {
+        right: 60px;
+    }
+    .mainSection {
+        padding: 150px 0;
+    }
+    .titleProgrammsCheck h2 {
+        font-size: 30px;
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+    .blockBtnProgrammsDefault > button {
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+    .activeBtnProgramms1.active,
+    .activeBtnProgramms2.active,
+    .activeBtnProgramms3.active,
+    .activeBtnProgramms4.active,
+    .activeBtnProgramms5.active,
+    .activeBtnProgramms6.active {
+        border: none;
+        font-size: 14px;
+        padding: 5px 5px;
+        background-color: #FF287A;
+        color: #fff;
+        border-radius: 15px;
+    }
+    .blockInfoProgramms {
+        margin: 50px auto;
+    }
+    .titleBlockLine h2 {
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    .titleBlockProgramm {
+        font-size: 26px;
+    }
+    .titleCard {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .subtitleCard {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .dataCard {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .nowPrice {
+        font-size: 16px;
+    }
+    .card {
+        height: 300px;
+    }
+    .salePrice {
+        font-size: 18px;
+        color: red;
+    }
+    .whyWe {
+        margin-top: 50px;
+    }
+    .blockInfoClinic {
+        height: 300px;
+    }
+    .titleTextInfoClinic {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .subtitleTextInfoClinic {
+        font-size: 14px;
+        letter-spacing: 0;
+        margin-bottom: 0;
+    }
+    .textInfoClinic {
+        padding: 15px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .blockInfoClinic img {
+        width: 430px;
+    }
+    .aboutClinic {
+        padding: 50px 0;
+    }
+    .needHelp {
+        margin-bottom: 50px;
+    }
+    .bgMainSection {
+        bottom: -50px;
+    }
+    .fonGlobus {
+        top: -100px;
+        height: 217px;
+        left: 40px;
+    }
+}
+
+@media (max-width: 924px) {
+    .mainSection {
+        padding: 50px 0;
+    }
+    .imageBlockProgramm img {
+        width: 300px;
+    }
+    .sizeCardEcoTwoRows {
+        width: 100%;
+    }
+    .sizeCardEcoTwoRows:nth-child(-n+1) {
+        margin-bottom: 20px;
+    }
+    .inpMainForm input {
+        border-radius: 10px;
+        padding: 5px 5px;
+    }
+    .formMain {
+        padding: 25px 25px;
+        margin: 10px 0 0 10px;
+    }
+    .titleBlockMAin {
+        font-size: 1.7rem;
+    }
+    .btnFormMain {
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    .subtitleBlockProgramm {
+        font-size: 14px;
+    }
+    .bottomSubtitleProgramm {
+        margin-bottom: 10px;
+    }
+    .textBlockProgramm {
+        margin-right: 30px;
+    }
+    .marginModal input {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 862px) {
+    .fonWhyWeTwo {
+        bottom: 0;
+        height: 200px;
+    }
+    .mainSection {
+        margin: 0;
+    }
+    .itc-slider-wrapper {
+        width: 100%;
+    }
+    .subtitleCard {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .dataCard {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .nowPrice {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .salePrice {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .priceCard {
+        margin-bottom: 60px;
+    }
+    .btnCard {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .blockInfoClinic {
+        height: auto;
+        background-color: #fff;
+        flex-direction: column;
+    }
+    .blockInfoClinic img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px 30px 0 0;
+    }
+    .textInfoClinic {
+        border-left: 1px solid #FF287A;
+        border-bottom: 1px solid #FF287A;
+        border-right: 1px solid #FF287A;
+        border-top: none;
+        border-radius: 0 0 30px 30px;
+    }
+    .titleTextInfoClinic {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .subtitleTextInfoClinic {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .textInfoClinic .zapis {
+        font-size: 14px;
+        padding: 10px 30px;
+        margin: 0 30px 20px;
+    }
+    .blockBtnProgrammsDefault > button {
+        font-size: 12px;
+    }
+    .brFooterForm {
+        display: block;
+    }
+    .textFooterForm {
+        text-align: center;
+    }
+}
+
+@media (max-width: 795px) {
+    .nav-toggle {
+        display: block;
+    }
+    .hTwo {
+        display: none;
+    }
+    .imageMain {
+        display: none;
+    }
+    .mainSectionAll {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .titleBlockMAin {
+        font-size: 2.1rem;
+        text-align: center;
+        font-weight: 500;
+    }
+    .allInputForm {
+        margin-bottom: 20px;
+    }
+    .formMain {
+        padding: 25px 25px;
+        margin: 30px 0 0 0;
+    }
+    .activeBtnProgramms1,
+    .activeBtnProgramms2,
+    .activeBtnProgramms3,
+    .activeBtnProgramms4,
+    .activeBtnProgramms5,
+    .activeBtnProgramms6 {
+        width: 33%;
+    }
+    .activeBtnProgramms1.active,
+    .activeBtnProgramms2.active,
+    .activeBtnProgramms3.active,
+    .activeBtnProgramms4.active,
+    .activeBtnProgramms5.active,
+    .activeBtnProgramms6.active {
+        padding: 10px 0;
+    }
+    .titleBlockProgramm {
+        font-size: 20px;
+    }
+    .subtitleBlockProgramm {
+        font-size: 12px;
+    }
+    .imageBlockProgramm img {
+        width: 220px;
+    }
+    .blockBtnProgrammsDefault > button {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .rightBlockHelp img{
+        max-width: 60%;
+        height: auto;
+    }
+    .blockNeedHelp {
+        height: 160px;
+    }
+    .titleNeedHelp {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .rightBlockHelp {
+        display: none;
+    }
+    .blockNeedHelp {
+        align-items: center;
+        justify-content: center;
+    }
+    .titleNeedHelp br {
+        display: none;
+    }
+    .leftBlockHelp {
+        margin-left: 0;
+        text-align: center;
+    }
+    .textWhatEco {
+        font-size: 14px;
+    }
+    .rowOneCardsWhatEco {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardWhatEco {
+        margin-bottom: 30px;
+    }
+    .sizeCardWhatEcoOneRow {
+        width: auto;
+    }
+    .sizeCardWhatEcoTwoRow {
+        width: auto;
+    }
+    .rowTwoCardsWhatEco {
+        margin-top: 0;
+        align-items: center;
+        flex-direction: column;
+    }
+    .subtitleCardWhy {
+        font-size: 14px;
+    }
+    .titleCardWhy {
+        font-size: 20px;
+    }
+    .blockIconCardWhy {
+        width: 60px;
+        height: 60px;
+    }
+    .blockIconCardWhy img {
+        width: 25px;
+        height: auto;
+    }
+    .card {
+        border-radius: 15px;
+        padding: 15px 15px;
+    }
+    .positionClinic,
+    .textNumber {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .allContactCol {
+        flex-direction: column-reverse;
+    }
+    .textContact {
+        border: none;
+    }
+    .listContact {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .w25 {
+        width: 100%;
+        margin-right: 0;
+    }
+    .listContact li {
+        border-bottom: none;
+    }
+    .w75 {
+        width: 100%;
+    }
+    .contacts {
+        padding-bottom: 0;
+    }
+    .itc-slider-itemReviews {
+        flex: 0 0 100% !important;
+    }
+    .imageBlockProgramm {
+        display: none;
+    }
+    .titleBlockProgramm {
+        margin-bottom: 20px;
+    }
+    .blockInfoProgramms {
+        margin: 30px auto 50px auto;
+        padding-bottom: 50px;
+    }
+    .subtitleBlockProgramm {
+        margin-bottom: 20px;
+    }
+    .blockInfoProgramms {
+        border-bottom: 1px solid #FF287A;
+    }
+}
+@media (max-width: 666px) {
+    .listContact {
+        flex-wrap: wrap;
+    }
+    .textEndMob {
+        text-align: end;
+    }
+    .listContact li {
+        width: 50%;
+    }
+    .btnFormModal {
+        width: 60%;
+    }
+    .btnFormMain {
+        padding: 10px 0;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 619px) {
+    .titleSLider {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .titleProgrammsCheck h2 {
+        font-size: 20px;
+    }
+    .activeBtnProgramms1.active,
+    .activeBtnProgramms2.active,
+    .activeBtnProgramms3.active,
+    .activeBtnProgramms4.active,
+    .activeBtnProgramms5.active,
+    .activeBtnProgramms6.active,
+    .blockBtnProgrammsDefault > button {
+        font-size: 12px;
+    }
+    .titleBlockLine h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .titleProgrammsCheck {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .titleTextInfoClinic {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .titleBlockQuestions {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .card:not(:first-child) {
+        margin-top: 20px;
+    }
+    .titleBlockMAin {
+        font-size: 2rem;
+    }
+    .blockInfo1,
+    .blockInfo2,
+    .blockInfo3 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .card:not(:last-child) {
+        margin-right: 0;
+    }
+    .titleCard {
+        margin-bottom: 30px;
+    }
+    .titleCardEco {
+        font-size: 16px;
+    }
+    .subtitleCardEcoOneRows {
+        font-size: 14px;
+    }
+    .subtitleCard {
+        margin-bottom: 15px;
+    }
+    .dataCard {
+        margin-bottom: 30px;
+    }
+    .card {
+        height: 300px;
+        width: auto;
+    }
+    .priceCard {
+        margin-bottom: 70px;
+    }
+    .subtitleTextInfoClinic {
+        font-size: 12px;
+    }
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 532px) {
+    .sizeCardEcoTwoRows, .sizeCardEcoOneRows, .sizeCardEcoThreeRows {
+        width: 100%;
+        height: 350px;
+    }
+    .blockBottomCardEcoTwoRows {
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .priceCardEcoTwoRows {
+        margin-bottom: 10px;
+    }
+    .cardWhy:not(:last-child) {
+        margin-right: 15px;
+    }
+    .cardWhy {
+        width: 100%;
+        height: 180px;
+        border-radius: 15px;
+    }
+    .textInfoClinic {
+        border-radius: 0 0 15px 15px;
+    }
+    .cardECO {
+        border-radius: 15px;
+    }
+    .blockIconCardWhy {
+        width: 40px;
+        height: 40px;
+        -webkit-box-shadow: 2px 12px 12px 5px rgba(34, 60, 80, 0.38);
+        -moz-box-shadow: 2px 12px 12px 5px rgba(34, 60, 80, 0.38);
+        box-shadow: 2px 7px 7px 2px rgba(34, 60, 80, 0.38);
+    }
+    .ThreeRowCardsProgramms {
+        margin-top: 20px;
+    }
+    .pt1108lastCard {
+        margin-top: 20px;
+    }
+    .sizeCardEcoThreeRows:nth-child(-n+1) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 494px) {
+    .box .label {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .box .content p {
+        font-size: 12px;
+    }
+    .box .content ol {
+        font-size: 12px;
+    }
+    .titleNeedHelp {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .iconNumber {
+        display: none;
+    }
+    .blockNumber {
+        display: none;
+    }
+    .rowCardWhy {
+        flex-direction: column;
+    }
+    .mb-50 {
+        margin-bottom: 20px;
+    }
+    .cardWhy:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .titleBlockMAin {
+        font-size: 22px;
+    }
+    .zapis {
+        font-size: 12px;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    .headerOne .zapis {
+        display: none;
+    }
+    .btnCall a {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .nameClinic span {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .nameClinic h2 {
+        font-size: 13px;
+        letter-spacing: 0.09rem;
+        font-weight: 400;
+    }
+    .allInputForm {
+        flex-direction: column;
+    }
+    .inpMainForm:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .formMain form {
+        align-items: stretch;
+    }
+    .nameFormMain {
+        text-align: center;
+    }
+}
+
+@media (max-width: 466px) {
+    .modal-content {
+        width: 90%;
+    }
+    .modal-header h2 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .formModal {
+        margin: 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .btnFormMain {
+        padding: 10px 0;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    .textFooterForm {
+        font-size: 10px;
+    }
+    .footerForm {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 352px) {
+    .modal-content {
+        padding: 20px 10px;
+        height: 38%;
+    }
+    .marginModal input {
+        font-size: 12px;
+    }
+}
+
